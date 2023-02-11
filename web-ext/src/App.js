@@ -26,28 +26,30 @@ export const DateTime = () => {
     const convertDay = day => {
         switch (day) {
             case 0:
-              day= "Sunday"
+              day= "Sun"
               return day
             case 1:
-              day= "Monday"
+              day= "Mon"
               return day
             case 2:
-              day= "Tuesday"
+              day= "Tues"
               return day
             case 3:
-              day= "Wednesday"
+              day= "Wed"
               return day
             case 4:
-              day= "Thursday"
+              day= "Thurs"
               return day
             case 5:
-              day= "Friday"
+              day= "Fri"
               return day
             case 6:
-              day= "Saturday"
+              day= "Sat"
               return day
           } 
     }
+
+    const option = {month: 'numeric', day: 'numeric'}
 
     return(
         <div className="MainPage" style={{ 
@@ -60,7 +62,7 @@ export const DateTime = () => {
           }}>
         <div className="timeBlock">
             <p className="time"> {(date.getHours() % 12  || 12)}:{date.getMinutes()} {date.getHours() >= 12 ? 'PM' : 'AM'}</p>
-            <p> {convertDay(date.getDay())}, {date.toLocaleDateString()}</p>
+            <p> {convertDay(date.getDay())}, {date.toLocaleDateString(undefined, option)}</p>
         </div>
         <div className="WallpaperIcon">
         <IconButton size="large" color="primary" aria-label="set background" component="label">
