@@ -32,9 +32,9 @@ export const DateTime = () => {
             width: '100vw',
             height: '100vh'
           }}>
-        <div className="time">
-            <p> Time : {date.toLocaleTimeString()}</p>
-            <p> Date : {date.toLocaleDateString()}</p>
+        <div className="timeBlock">
+            <p className="time"> {(date.getHours() % 12  || 12)}:{date.getMinutes()}</p>
+            <p> {date.getDay()}, {date.toLocaleDateString()}</p>
         </div>
         <div className="WallpaperIcon">
         <IconButton size="large" color="primary" aria-label="set background" component="label">
