@@ -59,7 +59,7 @@ export const DateTime = () => {
             height: '100vh'
           }}>
         <div className="timeBlock">
-            <p className="time"> {(date.getHours() % 12  || 12)}:{date.getMinutes()}</p>
+            <p className="time"> {(date.getHours() % 12  || 12)}:{date.getMinutes()} {date.getHours() >= 12 ? 'PM' : 'AM'}</p>
             <p> {convertDay(date.getDay())}, {date.toLocaleDateString()}</p>
         </div>
         <div className="WallpaperIcon">
