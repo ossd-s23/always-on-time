@@ -10,6 +10,7 @@
 }
 
 .timeBlock{
+  font-family: "Technology";
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
@@ -18,6 +19,7 @@
   left: 50%;
   margin-top: -50px;
   margin-left: -80px;
+  font-size: 4.5vw;
 }
 
 .time {
