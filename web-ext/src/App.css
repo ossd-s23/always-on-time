@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.WallpaperIcon{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.time{
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
