@@ -23,6 +23,32 @@ export const DateTime = () => {
         console.warn('${backgroundImage}');
     }
 
+    const convertDay = day => {
+        switch (day) {
+            case 0:
+              day= "Sunday"
+              return day
+            case 1:
+              day= "Monday"
+              return day
+            case 2:
+              day= "Tuesday"
+              return day
+            case 3:
+              day= "Wednesday"
+              return day
+            case 4:
+              day= "Thursday"
+              return day
+            case 5:
+              day= "Friday"
+              return day
+            case 6:
+              day= "Saturday"
+              return day
+          } 
+    }
+
     return(
         <div className="MainPage" style={{ 
             backgroundImage: `url(${backgroundImage})`,
@@ -34,7 +60,7 @@ export const DateTime = () => {
           }}>
         <div className="timeBlock">
             <p className="time"> {(date.getHours() % 12  || 12)}:{date.getMinutes()}</p>
-            <p> {date.getDay()}, {date.toLocaleDateString()}</p>
+            <p> {convertDay(date.getDay())}, {date.toLocaleDateString()}</p>
         </div>
         <div className="WallpaperIcon">
         <IconButton size="large" color="primary" aria-label="set background" component="label">
