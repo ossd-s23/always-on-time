@@ -9,8 +9,17 @@
   font-size: 18px;
 }
 
-.time{
-  text-align: center;
+.timeBlock{
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
+.time {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  text-align: left;
 }
 
 .App-logo {
@@ -24,6 +33,7 @@
   }
 }
 
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,6 +44,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+*/
 
 .App-link {
   color: #61dafb;
