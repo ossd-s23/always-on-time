@@ -1,11 +1,15 @@
 # always-on-time
-A web extension that displays the time, date, and weather on default home page whenever a new tab is opened to help users always be on time and plan for the day.
+A web extension that displays the time and date on default home page whenever a new tab is opened to help users always be on time and plan for the day.
 
 ## Features
 - shows current time
-- a pop up windoww that allows users to manually enter the location
-- has an aesthetic background
-- displays the date
-- displays the weather
-- (potential additional feature) allow users to upload photos to set as background
-- (potential additional feature) to-do list or Google calendar
+- display today's date
+- an aesthetic background
+    - choose from default background pictures
+    - upload from the user's computer
+
+
+## Ideas for Future 
+- to-do list
+- Google calendar
+- weather display
