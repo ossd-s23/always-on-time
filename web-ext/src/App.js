@@ -49,7 +49,11 @@ export const DateTime = () => {
           } 
     }
 
-    const option = {month: 'numeric', day: 'numeric'}
+    const optionDate = {month: 'numeric', day: 'numeric'}
+    const leadingZero = date => {
+      return (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
+    } 
+    
 
     return(
         <div className="MainPage" style={{ 
@@ -61,8 +65,8 @@ export const DateTime = () => {
             height: '100vh'
           }}>
         <div className="timeBlock">
-            <p className="time"> {(date.getHours() % 12  || 12)}:{date.getMinutes()} {date.getHours() >= 12 ? 'PM' : 'AM'}</p>
-            <p> {convertDay(date.getDay())}, {date.toLocaleDateString(undefined, option)}</p>
+            <p className="time"> {(date.getHours() % 12  || 12)}:{leadingZero(date)} {date.getHours() >= 12 ? 'PM' : 'AM'}</p>
+            <p> {convertDay(date.getDay())}, {date.toLocaleDateString(undefined, optionDate)}</p>
         </div>
         <div className="WallpaperIcon">
         <IconButton size="large" color="primary" aria-label="set background" component="label">
