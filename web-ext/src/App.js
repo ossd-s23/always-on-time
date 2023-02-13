@@ -15,7 +15,7 @@ export const DateTime = () => {
         }
     
     });
-    var main = document.getElementsByClassName("MainPage");
+    var main = document.getElementsByClassName("MainPage")[0];
 
     const handleChange = e => {
         setImage(URL.createObjectURL(e.target.files[0]))
