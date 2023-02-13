@@ -13,6 +13,12 @@ A web extension that displays the time and date on default home page whenever a 
 - To-do list on the side of the home page
 - Integrate with Google calendar to show user's upcoming events for the next 3 - 5 hours
 
+## Installation
+- Pull / download our code from Github repo
+- Run "npm install"
+- Run "npm run build"
+- Upload any file from the build folder into the Microsoft extension "Load Temporary Add-On" button
+
 ## Contributing
 If you'd like to contribute, please check out our [Contributing Document](CONTRIBUTING.md) to see the ways you can contribute and our general guidelines!
 
